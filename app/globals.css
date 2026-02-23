@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #EF4444;
+  /* Vibrant Red */
+  --color-secondary: #B91C1C;
+  /* Darker Red */
+  --color-brand-black: #111827;
+  /* Slate 900 */
+  --color-brand-gray: #1F2937;
+  /* Slate 800 */
+
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  --shadow-premium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-brand-black font-body antialiased selection:bg-primary selection:text-white overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCqAhcpiPch1Uzbd-XOaIs5o3EHKnww5nqWpVkPOSQ7hoeJRrCgg7AqZzJVkl9JfvQk4qAcPtisCn2Ch0M4_4o8o9OwQFMT9VhCWYEQj7Ib2Rul__E1PmeCa9mD0yOneQ2csZUJtKvQukeorRQ3ORWVefnI088OdaeH3YO5Nk8JZN15LJZnWoc0QmIRTGZxPUQKzR9yuHu5YQ40yM03Z5t2DC-js9fR6WP0YE6iinRy71N9FJarS3gmnQkwkLNKi-lId0oirJwXYTst);
+  background-size: cover;
+  background-position: center;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
